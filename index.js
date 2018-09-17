@@ -151,6 +151,8 @@ function createQuestion(questionObject) {
     <h2><p>Question ${questionObject.questionNumber}/10:</p> "${questionObject.text}"</h2>
     <div class="question-score col-6">
     <form action="/submit/" method="post" class="quiz-form">
+    <fieldset>
+    <legend>Answers</legend>
     <label>
       <input type="radio" name="answer" value=${questionObject.ans1_value}>${questionObject.ans1}
     </label><br/>
@@ -163,6 +165,7 @@ function createQuestion(questionObject) {
     <label>
       <input type="radio" name="answer" value=${questionObject.ans4}>${questionObject.ans4}
     </label><br/>
+    </fieldset>
     <button type="submit" class="js-submit-answer">Submit Answer</button>
     </form>
     <h3><p class="score-p">Current Score: <span class="score-span">${currentScore}</span>/${questionObject.questionNumber}</p></h3>
