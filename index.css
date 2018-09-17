@@ -1,0 +1,132 @@
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background: url("https://www.iliketowastemytime.com/sites/default/files/outer-space-hd-wallpaper.jpg") center no-repeat fixed #080C0D;
+    color: white;
+    font-size: 1.5em;
+}
+
+.row {
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-12, .col-4, .col-6 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-12, .col-4, .col-6 {
+  width: 100%;
+}
+
+h1 {
+    font-family: "Itim", cursive;
+    font-size: 2em;
+}
+
+h2, h3 {
+    font-size: 1em;
+}
+
+h1, h2, h3, .intro-text {
+    color: #e6f3ff;
+}
+
+label {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 200px;
+    margin-top: 5px;
+}
+
+button {
+    display: block;
+    width: 300px;
+    height: 90px;
+    background-color: #12202D;
+    color: white;
+    border-radius: 25px;
+    border-width: 0;
+    margin-top: 1em;
+}
+
+.correction, .choose-answer {
+    color: red;
+    display: block;
+}
+ 
+.correct-answer, .score-p {
+    color: green;
+    display: block;
+}
+
+p {
+    margin-top: 0;
+}
+
+main {
+    margin-bottom: 1em;
+}
+
+form {
+    margin-top: 1em;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}
+
+input[type="radio"]:focus {
+    border: 5px black solid;
+}
+
+.full-correct {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .col-4 {
+      width: 33.33%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    img {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .full-correct, .correct-answer {
+        text-align: center;
+    }
+
+    h2, h3, button {
+        font-size: 1.25em;
+    }
+
+    body, .intro-text {
+        font-size: 1.75em;
+    }
+}
